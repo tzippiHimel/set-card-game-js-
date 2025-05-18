@@ -1,0 +1,117 @@
+body{
+    margin:0;
+    color:#ffffff;
+    background: white url(../img/neon-background-publicdomain.webp) no-repeat top;
+    background-size: 100%;
+    font:600 16px/50px 'Open Sans',sans-serif;
+    text-align:center;
+    }
+    .box{
+    position: relative;
+    height: 600px;
+    width: 550px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    }
+    .conteiner{
+        background-color: #000000b1;
+        height: 100%;
+        border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+
+    }
+    .btnClick{
+    color: white;
+    background-color:  rgba(255,255,255,0.13);
+    border: none;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-size: 22px;
+    
+    }
+    .btnClick:hover{
+    border-bottom: 1px solid rgba(139, 102, 163, 0.585);
+    
+    }
+    .sign-up,.sign-in{
+        margin-top: 15%; 
+        margin-left: 14%;
+        text-align:left;
+        font-size: 120%;
+
+    }
+    .input{
+        
+    background: transparent;
+    border: none;
+    border-color: transparent;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    font-size: 15px;
+    color:#ffffff;
+    font-size: 100%;
+    }
+    input:focus{
+        outline: none;
+        color:#ffffff;
+    }
+   
+    .btnsubmit{
+        color: white;
+        background-color:  rgba(255,255,255,0.13);
+        border: none;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+        padding-bottom: 5px;
+        font-size: 16px;
+    }
+    .btnsubmit:hover{
+        border:3px solid rgba(139, 102, 163, 0.585) ;
+    }
+    img{
+        float: right;
+        width: 300px;
+    }
+    @media(max-width:600px){
+
+        .box{
+            position: relative;
+            height: 500px;
+            width: 400px;
+            background-color: rgba(255,255,255,0.13);
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.1);
+            box-shadow: 0 0 40px rgba(8,7,16,0.6);
+            padding: 50px 35px;
+            }
+            body{
+                background-size: 100vh;
+                }
+                img{
+                    position: relative;
+                    float: right;
+                    width: 150px;
+                    z-index: 30000;
+                }
+    }
+
+
+ 

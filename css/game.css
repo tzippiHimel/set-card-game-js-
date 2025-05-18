@@ -1,0 +1,212 @@
+img {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 130px;
+}
+
+body {
+    background: white url(../img/neon-background-publicdomain.webp) no-repeat top;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+button{
+    color: white;
+    background-color:  rgba(255,255,255,0.13);
+    border: none;
+    width: 200px;
+     height: 40px; 
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+
+nav{
+    width: 400px;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+     margin-top: 5px;
+     justify-content: space-around;
+     margin-left: 20px;
+}
+#point{
+    color:white;
+    z-index: 2000;
+    position: absolute;
+     transform: translate(-50%, -50%); 
+    top: 93vh;
+    left: 50vw;
+    font-size: 20px;
+  
+}
+#thumb{
+    color:white; 
+    width: 100%; 
+     display: flex; 
+     align-items: center;  
+    z-index: 300;
+     justify-content: center; 
+    text-align: center;
+    position: absolute;
+    font-size: 200px;
+margin: auto; 
+top:30vh;
+}
+#timer{
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2em;
+    height: 40vh;
+
+}
+#gameOverElement,
+ #goOutElement 
+ { 
+
+    position: absolute;
+    z-index: 100;
+    /* background-color: #02020259; */
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+.sayGameOver,
+#askGoOut {
+    background-color: #bb7bab;
+    width: fit-content;
+    font-size: 100%;
+    height: fit-content;
+    padding: 2%;
+    margin: -487px auto;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.514), 1px 4px 15px 1px rgba(0, 0, 0, 0.61);
+    
+}
+#sayGameOver img {
+    height: 60%;
+    width: 60%;
+    border-radius: 5%;
+}
+sayGameOver p {
+    font-size: 1.8em;
+}
+
+.sayGameOver button,
+#askGoOut button {
+    border-radius: 15%;
+    border: none;
+    opacity: 0.5;
+    background-color: #bb7bab;
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    margin: auto 10%;
+    padding: 2% 3%;
+}
+
+#sayGameWin img {
+    background-image: url(../img/confetti.gif);
+    background-size: cover;
+    animation: rotate_div 3s infinite;
+    height: 60%;
+    border-radius: 5%;
+    box-shadow: none;
+}
+p{
+color: aliceblue;
+}
+@keyframes rotate_div {
+    0% {
+        
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+
+    }
+}
+@media(max-width:600px){
+    #board {
+        display: grid;
+        /* width: 90vw; */
+        grid-template-columns: auto auto;
+      
+    }
+    button{
+        color: white;
+        background-color:  rgba(255,255,255,0.13);
+        border: none;
+        width: 300px;
+         height: 40px; 
+        cursor: pointer;
+        font-size: 15px;
+        
+    }
+    img {
+        width: 150px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        height: 80px;
+    }
+    body{
+        background-size: 100vh;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+         margin-top: 2px;
+         align-items: center;
+         margin-left:0px;
+         height: 40px;
+    }
+    #timer{
+        color: white;
+        text-shadow: 0 0 3px black, 0 0 5px black;
+  
+        font-size: 15px;
+        width: 20vw;
+        height: 40px;
+
+background-color:  rgba(255,255,255,0.13);
+
+    }
+    .sayGameOver,
+#askGoOut {
+    background-color: #bb7bab;
+    font-size: 100%;
+    height: fit-content;
+    padding: 2%;
+    margin-top: 50px;
+
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.514), 1px 4px 15px 1px rgba(0, 0, 0, 0.61);
+    
+}
+   
+}

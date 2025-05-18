@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/login.css" rel="stylesheet">
+    <title>set</title>
+    <link rel="icon" href="../img/logo_cards.png" border-radios="100px;">
+    <script src="../js/users.js"></script>
+</head>
+
+<body>
+    <img src="../img/logo.png"/>
+    <div class="box">
+        <div class="conteiner">
+            <button class="btnClick" id="btnIn" onclick="showFormSignIn()">Sign In</button>
+            <button class="btnClick" id="btnUp" onclick="showFormSignUp()">Sign Up</button>
+            <div class="sign-up" id="sign-up">
+                <form id="signUpForm" >
+                   
+                        <div>
+                            <label for="user">Username</label>
+                        </div>
+                        <div>
+                            <input type="text" id="user" class="input" required />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                        </div>
+                        <div>
+                            <input type="email" id="email" class="input" required />
+                        </div>
+                        <div>
+                            <label for="password"> Password</label>
+                        </div>
+                        <div>
+                            <input type="password" id="password" class="input" required />
+                        </div>
+                        <div>
+                            <button class="btnsubmit" type="submit" id="up">sign-up</button>
+                        </div>
+                </form>
+
+            </div>
+
+            <div class="sign-in" id="sign-in">
+                <form  id="signInForm" >
+                    <div>
+                        <label for="user1">Username</label>
+                    </div>
+                    <div>
+                        <input type="text" id="user1" class="input" required />
+                    </div>
+                    <div>
+                        <label for="password1">Password</label>
+                    </div>
+                    <div>
+                        <input type="password" id="password1" class="input" required />
+                    </div>
+                    <div>
+                        <button class="btnsubmit" type="submit" id="in">sign-in</button>
+                    </div>
+                </form>
+
+            </div>
+            <div id="msg"></div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="../js/login.js"></script>
+
+
+
+</html>
