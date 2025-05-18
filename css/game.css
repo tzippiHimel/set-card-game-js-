@@ -97,7 +97,7 @@ top:30vh;
     font-size: 100%;
     height: fit-content;
     padding: 2%;
-    margin: -487px auto;
+    margin-top: 10vh; 
     text-align: center;
     border-radius: 5%;
     box-shadow: 1px 7px 10px 1px rgba(0, 0, 0, 0.514), 1px 4px 15px 1px rgba(0, 0, 0, 0.61);
