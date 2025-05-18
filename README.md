@@ -37,5 +37,5 @@ For example, if all three cards have the same shape, different colors, different
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/tzippiHimel/set-game.git
+git clone https://github.com/tzippiHimel/set-card-game-js-.git
 ```
